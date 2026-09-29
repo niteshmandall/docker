@@ -1,0 +1,15 @@
+{
+  "name": "gmail-firefly-sync",
+  "version": "1.0.0",
+  "description": "Sync Indian bank transaction alert emails from Gmail to Firefly III",
+  "main": "sync.js",
+  "scripts": {
+    "auth": "node auth.js",
+    "sync": "node sync.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0"
+  }
+}

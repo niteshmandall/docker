@@ -1,0 +1,26 @@
+# Environment variables
+.env
+gmail-sync/.env
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary / Scratch Scripts
+gmail-sync/test.js
+gmail-sync/add-bills.js
+statement_output.txt
+statement_output_utf8.txt
+
+# Google API Credentials (SECURITY RISK)
+gmail-sync/credentials.json
+gmail-sync/token.json
+
+# Firefly Database & Upload Volumes
+firefly_iii_db/
+firefly_iii_upload/
+
+# OS generated files
+.DS_Store
+Thumbs.db

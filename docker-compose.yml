@@ -40,6 +40,21 @@ services:
       crond -f -L /dev/stdout"]
     networks:
       - firefly_iii
+  gmail-sync:
+    build:
+      context: ./gmail-sync
+      dockerfile: Dockerfile
+    container_name: firefly_iii_gmail_sync
+    restart: always
+    env_file: ./gmail-sync/.env
+    environment:
+      - FIREFLY_URL=http://app:8080
+    volumes:
+      - ./gmail-sync:/app
+    ports:
+      - "3000:3000"
+    networks:
+      - firefly_iii
     depends_on:
       - app
 
